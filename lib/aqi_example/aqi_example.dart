@@ -36,20 +36,20 @@ class MyApp extends StatelessWidget {
           margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         ),
       ),
-      home: const ApiExample(),
+      home: const AqiExample(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class ApiExample extends StatefulWidget {
-  const ApiExample({super.key});
+class AqiExample extends StatefulWidget {
+  const AqiExample({super.key});
 
   @override
-  State<ApiExample> createState() => _ApiExampleState();
+  State<AqiExample> createState() => _ApiExampleState();
 }
 
-class _ApiExampleState extends State<ApiExample> {
+class _ApiExampleState extends State<AqiExample> {
   bool loading = true;
   String cityName = '';
   int aqi = 0;
